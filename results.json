@@ -1,0 +1,56 @@
+{
+  "hw_params": {
+    "alpha": 0.1,
+    "beta": 0.1,
+    "gamma": 0.1
+  },
+  "metrics": {
+    "Naive": {
+      "MAE": 5079.9,
+      "RMSE": 6158.4,
+      "MAPE": 19.53
+    },
+    "Seasonal Naive": {
+      "MAE": 3383.1,
+      "RMSE": 4124.5,
+      "MAPE": 12.56
+    },
+    "Moving Average (3)": {
+      "MAE": 4326.2,
+      "RMSE": 5208.5,
+      "MAPE": 16.81
+    },
+    "Linear Reg (trend+season+lag12)": {
+      "MAE": 2460.2,
+      "RMSE": 3188.2,
+      "MAPE": 8.95
+    },
+    "Holt-Winters (additive)": {
+      "MAE": 2084.1,
+      "RMSE": 2833.0,
+      "MAPE": 7.56
+    }
+  },
+  "forecast": [
+    {
+      "month": "2026-06",
+      "point": 25902,
+      "lo80": 22466,
+      "hi80": 29339
+    },
+    {
+      "month": "2026-07",
+      "point": 24177,
+      "lo80": 20576,
+      "hi80": 27778
+    },
+    {
+      "month": "2026-08",
+      "point": 25260,
+      "lo80": 21350,
+      "hi80": 29170
+    }
+  ],
+  "naive_mape": 19.53,
+  "hw_mape": 7.56
+}
